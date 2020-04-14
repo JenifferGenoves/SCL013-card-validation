@@ -13,53 +13,53 @@
 
 // The maskify function must accept a string of any length.
 
-function maskify(str) {
-    var transformDigits = str.slice(0, -4);
-    var nonTransformDigits = str.slice(-4);
-      var transformArray = transformDigits.split('').map(function(letter) {
-      return letter = "#"
-    });
+// function maskify(str) {
+//     var transformDigits = str.slice(0, -4);
+//     var nonTransformDigits = str.slice(-4);
+//       var transformArray = transformDigits.split('').map(function(letter) {
+//       return letter = "#"
+//     });
     
-    var transformArray = transformArray.join('');
-    return transformArray.concat(nonTransformDigits);
-  }
+//     var transformArray = transformArray.join('');
+//     return transformArray.concat(nonTransformDigits);
+//   }
   
-  const maskify = str => str.replace(/.(?=.{4})/g, '#');
+//   const maskify = str => str.replace(/.(?=.{4})/g, '#');
   
-  function maskify(str) {
-      return str.length > 4 ? '#'.repeat(str.length - 4) + str.substr(str.length - 4) : str;
-  }
+//   function maskify(str) {
+//       return str.length > 4 ? '#'.repeat(str.length - 4) + str.substr(str.length - 4) : str;
+//   }
   
-  function maskify(str) {
-    if(str.length > 5)
-      {
-        return "#".repeat(str.length -4) + str.substring(str.length -4);
-      }
-    return str;
-  }
+//   function maskify(str) {
+//     if(str.length > 5)
+//       {
+//         return "#".repeat(str.length -4) + str.substring(str.length -4);
+//       }
+//     return str;
+//   }
   
-  function maskify(str) {
-    var len = str.length;
+//   function maskify(str) {
+//     var len = str.length;
     
-    if (len < 5) {
-      return str;
-    }
+//     if (len < 5) {
+//       return str;
+//     }
     
-    return str.split('').map(function(val, idx){
-      return (len - idx < 5) ? val : '#';
-    }).join('');
-  }
+//     return str.split('').map(function(val, idx){
+//       return (len - idx < 5) ? val : '#';
+//     }).join('');
+//   }
   
-  function maskify(str) {
-    var x = str.length;
-    var output = "";
-    for(var i = 0; i< x - 4;i++)
-      {
-        output += "#";
-      }
-     return output + str.substring(x-4,x);
+//   function maskify(str) {
+//     var x = str.length;
+//     var output = "";
+//     for(var i = 0; i< x - 4;i++)
+//       {
+//         output += "#";
+//       }
+//      return output + str.substring(x-4,x);
     
-  }
+//   }
   
   
-  console.log(maskify("4556364607935616"));
+//   console.log(maskify("4556364607935616"));
