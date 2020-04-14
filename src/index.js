@@ -36,9 +36,9 @@ import validator from "./validator.js";
   
   
   
-  // function cancelFormularioTarjeta() {
-  //   ocultarYMostrar("registroUsuario", "bienvenido");s
-  // }
+  function cancelFormularioTarjeta() {
+    ocultarYMostrar("registroUsuario", "bienvenido");
+   }
   
   const buttonCancelar=document.getElementById("cancelFormularioTarjeta");
   buttonCancelar.addEventListener("click",cancelFormularioTarjeta);
