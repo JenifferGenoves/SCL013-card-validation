@@ -20,7 +20,7 @@ const validator = {
     return validator % 10 == 0;
   },
   maskify: (value) => {
-    value = value.replace(/.(?=.{4})/g, "x");
+    value = value.replace(/.(?=.{4})/g, "#");
     return value;
   },
 };
