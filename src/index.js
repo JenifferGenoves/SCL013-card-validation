@@ -45,6 +45,7 @@ import validator from "./validator.js";
 
   //----De validacion tarjeta  a cancelar//
   
+  
   function testcancel() { 
     ocultarYMostrar("formulario-tarjeta", "registroUsuario");
   }
