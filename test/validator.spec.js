@@ -22,10 +22,11 @@ describe('validator', () => {
       expect(typeof validator.maskify).toBe('function');
     });
 
-    test('Debería retornar "############5616" para "4556364607935616"', () => {
+    test('debería retornar "############5616" para "4556364607935616"', () => {
 expect(validator.maskify("4556364607935616")).toBe("############5616");
+
 
       // escribe aquí tu test
     });
-  });
+});
 });
